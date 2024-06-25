@@ -1,0 +1,160 @@
+*,
+#search {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+}
+
+.hero {
+    background: url(../images/background-image.png) no-repeat fixed;
+    background-position: center top;
+}
+
+.hero-body h2,
+.modal-card-title,
+#modal-release,
+#modal-type,
+#modal-genre,
+#modal-popularity,
+#modal-movie-description h3 {
+    letter-spacing: 2px
+}
+
+.container {
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 45%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#search-input {
+    font-size: 1rem;
+    height: 2.5em;
+    border-radius: 5px;
+}
+
+.radio {
+    margin-left: 1rem;
+}
+
+#movie-searchable {
+    margin-top: 35px;
+}
+
+
+.content-row {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    width: auto;
+    overflow-x: scroll;
+    padding-top: 0;
+}
+
+.card {
+    transition: 250ms all;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal-card-head,
+.modal-card-foot {
+    background: url(../images/background-image.png) no-repeat;
+    background-position: center top;
+}
+
+#movie-modal section img {
+    width: 40%;
+    transition: none;
+}
+
+#movie-modal img:hover {
+    margin-left: 0;
+    transform: none;
+    cursor: default;
+}
+
+#modal-poster-img {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.modal-card-title {
+    line-height: 1.5;
+}
+
+#movie-modal h3 {
+    font-size: 1.23em;
+    font-weight: bold;
+}
+
+/* Modal Styles End */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* Try not to touch this or else the navbar will break on smaller screens! */
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-brand {
+        justify-content: center;
+    }
+
+    .navbar-start {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #modal-poster-img {
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .card img {
+        max-width: none;
+        width: auto;
+        height: 40vw;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .hero-body {
+        padding: 13rem 4.5rem 2rem 4.5rem;
+    }
+
+    .columns:not(.is-desktop) {
+        display: flex;
+    }
+
+    .card img {
+        height: 60vw;
+    }
+}
